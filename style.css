@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+/* Josh comeau' s css reset to remove previous default styles/settings*/
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+  
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 1440px;
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.first-img{
+  width: 77.33px;
+  height: 80px;
+  top: 205px;
+  margin-left: 140px;
+  margin-bottom: 10px;
+}
+
+.second-img{
+  display: none;
+}
+
+.individuals{
+  width: 268px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 140px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.800000011920929px;
+  text-align: left;
+}
+.individual{
+  display: none;
+}
+
+.start{
+  width: 460px;
+  height: 75px;
+  margin-top: 20px;
+  margin-left:140px ;
+  color: #737373;
+}
+
+.inspire{
+  display: none;
+}
+
+.second-side{
+  background-color:rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+    
+    padding: 40px;
+    Width: 580px;
+    Height:679px;
+    margin-top: 81px;
+    margin-right: 140px;
+    margin-bottom: 80px;
+    border-radius: 6px;
+  
+}
+
+
+label{
+  width: 159px;
+  height: 14px;
+  font-size: 14px;
+  font-weight: 600;
+line-height: 14px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+color: #011C34;
+
+}
+
+
+
+#activity, #password{
+  width: 500px;
+  height: 48px;
+}
+.register{
+  width: 500px;
+  height: 48px;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: rgba(46, 196, 182, 1);
+  border: none;
+  margin-top: 20px;
+  box-shadow: 0px 10px 40px 0px #0000001A;
+  cursor: pointer;
+  color: #ffffff;
+
+}
+
+.privy{
+  width: 462px;
+  height: 25px;
+  margin-top: 16px;
+  font-family: 'Lato', sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color: #000000;
+}
+
+.privy a{
+  font-family: 'Lato', sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+color: #2EC4B6;
+}
+
+
+
+#password{
+  background: url(images/show.png) no-repeat right;
+}
+
+#activity{
+  background: url(images/u_angle-down.png) no-repeat right;
+}
+
+#date{
+  width: 238px;
+  height: 48px;
+  border-radius: 2px;
+  border: 1px solid #F0F0F0;
+  background: url(images/u_a_calendar-alt.png) no-repeat right;
+}
+#firstname{
+  width: 238px;
+  height: 48px;
+  border-radius: 2px;
+    border: 1px solid #F0F0F0;
+ 
+}
+
+#lastname{
+  width: 238px;
+  height: 48px;
+  border-radius: 2px;
+    border: 1px solid #F0F0F0;
+ 
+}
+
+#gender{
+  
+    width: 238px;
+    height: 48px;
+    border-radius: 2px;
+    border: 1px solid #F0F0F0;
+}
+
+#height{
+    width: 238px;
+    height: 48px;
+    border-radius: 2px;
+    border: 1px solid #F0F0F0;
+}
+
+#weight{
+  width: 238px;
+    height: 48px;
+    border-radius: 2px;
+    border: 1px solid #F0F0F0;
+}
+
+.wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+}
+
+@media(max-width:375px){
+      body{
+        width: 375px;
+        height: 1294px;
+        display: grid;
+        
+      }
+
+
+  .inspire{
+    display: block;
+    margin-left: 14px;
+    color: #737373;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    margin-top: -5px;
+  }
+
+  .start{
+    display: none;
+  }
+.second-img{
+  display: block;
+  Width:38.67px;
+  Height:40px;
+  margin-left: 14px;
+}
+
+
+
+.second-side{
+  background-color:#F7FDFC;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  display: grid;
+  padding: 24px ;
+  Width:327px;
+  Height:870px;
+  margin-left: 24px ;
+  margin-right: 24px;
+  margin-bottom: 138px;
+  margin-top: -7px;
+  border-radius: 6px;
+}
+
+  .wrapper{
+    width: 295px;
+     height: 72px;
+     margin-top: 90px;
+  }
+
+ .gender{
+  margin-top: 20px;
+  margin-left: 30px;
+ }
+  .register{
+    width: 295px;
+    height: 48px;
+    font-size: 16px;
+    margin-bottom:10px ;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: #2EC4B6;
+    border: none;
+}
+
+.privy{
+  display: block ;
+}
+
+
+
+#firstname{
+  width: 295px;
+  height: 48px;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border: 1px solid #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #737373;
+  line-height: 20px;
+}
+
+#lastname{
+  width: 295px;
+  height: 48px;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border: 1px solid #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #737373;
+  line-height: 20px;
+}
+
+#gender{
+  width: 295px;
+  height: 48px;
+  margin-top: 15px;
+  padding: 14px 16px;
+  border: 1px solid #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #737373;
+  line-height: 20px;
+}
+
+#weight{
+  width: 295px;
+  height: 48px;
+  margin-top: 15px;
+  padding: 14px 16px;
+  border: 1px solid #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+ 
+  line-height: 20px;
+}
+#height{
+  width: 295px;
+  height: 48px;
+  margin-top: 15px;
+  padding: 14px 16px;
+  border: 1px solid #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  
+  line-height: 20px;
+}
+
+#date{
+  width: 295px;
+  height: 48px;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border: 1px solid #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  
+  line-height: 20px;
+}
+
+#activity{
+  width: 295px;
+  height: 48px;
+  margin-top: 130px;
+  border: 1px solid #F0F0F0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+ 
+  line-height: 20px;
+}
+
+.level{
+  position: absolute;
+  margin-top: 110px;
+}
+
+#password{
+ 
+    width: 295px;
+    height: 48px;
+    margin-top: 40px;
+    border: 1px solid #F0F0F0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    
+    line-height: 20px;
+}
+  
+  .pword{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -300px;
+  }
+.individuals{
+  display: none;
+}
+  .individual{
+    display: block;
+    margin-left: 14px;
+    width: 327px;
+    height: 30px;
+    top: 154px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29.4px;
+    letter-spacing: 0.8px;
+    color: #000B0A;
+  }
+
+  .privy{
+    width: 316px;
+    height: 50px;
+  }
+
+  .first-img{
+    display: none;
+  }
+}
+
